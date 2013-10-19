@@ -33,7 +33,7 @@
     sender.selected = !sender.isSelected;
     if (sender.selected) {
         Card *card = [self.deck drawRandomCard];
-        [sender setTitle:card.contents forState:UIControlStateSelected];
+        [sender setTitle:card.contents forState:UIControlStateNormal];
         
     }
     self.cardsLeftLabel.text = [NSString stringWithFormat:@"Cards left: %d", [self.deck cardsLeft]];

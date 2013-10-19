@@ -25,6 +25,7 @@
 		A80FED0218123F6C0025E728 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = A80FED0118123F6C0025E728 /* PlayingCardDeck.m */; };
 		A80FED0518123F960025E728 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = A80FED0418123F960025E728 /* PlayingCard.m */; };
 		A80FED081812473A0025E728 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = A80FED071812473A0025E728 /* Deck.m */; };
+		A80FED0A1812E2610025E728 /* playing-card-back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A80FED091812E2610025E728 /* playing-card-back.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		A80FED0418123F960025E728 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = Model/PlayingCard.m; sourceTree = "<group>"; };
 		A80FED061812473A0025E728 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Model/Deck.h; sourceTree = "<group>"; };
 		A80FED071812473A0025E728 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = Model/Deck.m; sourceTree = "<group>"; };
+		A80FED091812E2610025E728 /* playing-card-back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "playing-card-back.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		A80FECCE1812319A0025E728 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A80FED091812E2610025E728 /* playing-card-back.jpg */,
 				A80FECD61812319A0025E728 /* CardGameAppDelegate.h */,
 				A80FECD71812319A0025E728 /* CardGameAppDelegate.m */,
 				A80FECCF1812319A0025E728 /* Matchismo-Info.plist */,
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A80FECE01812319A0025E728 /* Images.xcassets in Resources */,
+				A80FED0A1812E2610025E728 /* playing-card-back.jpg in Resources */,
 				A80FECD21812319A0025E728 /* InfoPlist.strings in Resources */,
 				A80FECDB1812319A0025E728 /* Main.storyboard in Resources */,
 			);
