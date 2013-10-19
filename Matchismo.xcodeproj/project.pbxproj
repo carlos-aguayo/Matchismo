@@ -170,12 +170,12 @@
 			children = (
 				A80FECFC18123F180025E728 /* Card.h */,
 				A80FECFD18123F180025E728 /* Card.m */,
-				A80FED0018123F6C0025E728 /* PlayingCardDeck.h */,
-				A80FED0118123F6C0025E728 /* PlayingCardDeck.m */,
 				A80FED0318123F960025E728 /* PlayingCard.h */,
 				A80FED0418123F960025E728 /* PlayingCard.m */,
 				A80FED061812473A0025E728 /* Deck.h */,
 				A80FED071812473A0025E728 /* Deck.m */,
+				A80FED0018123F6C0025E728 /* PlayingCardDeck.h */,
+				A80FED0118123F6C0025E728 /* PlayingCardDeck.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";

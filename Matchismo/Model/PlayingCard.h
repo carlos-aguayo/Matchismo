@@ -10,7 +10,9 @@
 
 @interface PlayingCard : Card
 
+/** There are only four suits "♥","♦","♣","♠" */
 @property (strong, nonatomic) NSString *suit;
+/** A number between 1 and 13, where 11-13 are J, Q, and K */
 @property (nonatomic) NSUInteger rank;
 
 + (NSArray *)validSuits;
