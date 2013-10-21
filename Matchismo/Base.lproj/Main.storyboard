@@ -12,19 +12,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="qZ1-XK-EKQ">
-                                <rect key="frame" x="20" y="49" width="60" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <size key="titleShadowOffset" width="8" height="0.0"/>
-                                <state key="normal" title="A♥">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="selected" title="    " backgroundImage="playing-card-back.jpg"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4D9-u6-ThV"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flips: 100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FYJ-sr-2Rv">
                                 <rect key="frame" x="20" y="20" width="85" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -63,19 +50,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Rra-cT-waw">
-                                <rect key="frame" x="20" y="49" width="60" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <size key="titleShadowOffset" width="8" height="0.0"/>
-                                <state key="normal" title="A♥">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="selected" title="    " backgroundImage="playing-card-back.jpg"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QT9-1A-Fk2"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="hRk-dJ-N22">
                                 <rect key="frame" x="88" y="49" width="60" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -113,32 +87,6 @@
                                 <state key="selected" title="    " backgroundImage="playing-card-back.jpg"/>
                                 <connections>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bfB-UI-C1T"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="g2T-an-AV6">
-                                <rect key="frame" x="20" y="128" width="60" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <size key="titleShadowOffset" width="8" height="0.0"/>
-                                <state key="normal" title="A♥">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="selected" title="    " backgroundImage="playing-card-back.jpg"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IYX-0g-8AF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="7xg-Yn-NuQ">
-                                <rect key="frame" x="20" y="128" width="60" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <size key="titleShadowOffset" width="8" height="0.0"/>
-                                <state key="normal" title="A♥">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="selected" title="    " backgroundImage="playing-card-back.jpg"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sab-Ph-WCz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="fz5-4c-mCT">
@@ -180,32 +128,6 @@
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NFx-z9-8f0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Qmb-KT-fjZ">
-                                <rect key="frame" x="20" y="207" width="60" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <size key="titleShadowOffset" width="8" height="0.0"/>
-                                <state key="normal" title="A♥">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="selected" title="    " backgroundImage="playing-card-back.jpg"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YZg-K4-Lep"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="e3T-GX-JVd">
-                                <rect key="frame" x="20" y="207" width="60" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <size key="titleShadowOffset" width="8" height="0.0"/>
-                                <state key="normal" title="A♥">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="selected" title="    " backgroundImage="playing-card-back.jpg"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="B53-lh-unr"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="i7A-TG-sjt">
                                 <rect key="frame" x="88" y="207" width="60" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -245,32 +167,6 @@
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7D1-iW-m1H"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Uxi-na-Liu">
-                                <rect key="frame" x="20" y="286" width="60" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <size key="titleShadowOffset" width="8" height="0.0"/>
-                                <state key="normal" title="A♥">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="selected" title="    " backgroundImage="playing-card-back.jpg"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bw1-pm-jlA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="3Ri-FS-dNM">
-                                <rect key="frame" x="20" y="286" width="60" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <size key="titleShadowOffset" width="8" height="0.0"/>
-                                <state key="normal" title="A♥">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="selected" title="    " backgroundImage="playing-card-back.jpg"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fUH-cb-Qp4"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="3Ew-IN-NDy">
                                 <rect key="frame" x="88" y="286" width="60" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -282,6 +178,58 @@
                                 <state key="selected" title="    " backgroundImage="playing-card-back.jpg"/>
                                 <connections>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="i9K-KI-TAg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="J57-8o-3m9">
+                                <rect key="frame" x="20" y="49" width="60" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <size key="titleShadowOffset" width="8" height="0.0"/>
+                                <state key="normal" title="A♥">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected" title="    " backgroundImage="playing-card-back.jpg"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nMV-rQ-E0o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="88t-wz-DU6">
+                                <rect key="frame" x="20" y="128" width="60" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <size key="titleShadowOffset" width="8" height="0.0"/>
+                                <state key="normal" title="A♥">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected" title="    " backgroundImage="playing-card-back.jpg"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Aaj-ZS-wLY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="lvI-l8-A8M">
+                                <rect key="frame" x="20" y="207" width="60" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <size key="titleShadowOffset" width="8" height="0.0"/>
+                                <state key="normal" title="A♥">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected" title="    " backgroundImage="playing-card-back.jpg"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Wp8-wv-gs7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="ndj-ED-8JD">
+                                <rect key="frame" x="20" y="286" width="60" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <size key="titleShadowOffset" width="8" height="0.0"/>
+                                <state key="normal" title="A♥">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected" title="    " backgroundImage="playing-card-back.jpg"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3ia-uH-FpL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="M80-Oy-pac">
@@ -314,12 +262,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outletCollection property="cardButtons" destination="Rra-cT-waw" id="8of-a4-5t0"/>
                         <outletCollection property="cardButtons" destination="i7A-TG-sjt" id="s4u-Bg-D3B"/>
                         <outletCollection property="cardButtons" destination="fz5-4c-mCT" id="87x-yp-x4I"/>
-                        <outletCollection property="cardButtons" destination="7xg-Yn-NuQ" id="5lo-4i-qvN"/>
-                        <outletCollection property="cardButtons" destination="e3T-GX-JVd" id="qzF-dE-Iaz"/>
-                        <outletCollection property="cardButtons" destination="3Ri-FS-dNM" id="9xh-fM-PnK"/>
                         <outletCollection property="cardButtons" destination="M80-Oy-pac" id="Pya-0K-ldx"/>
                         <outletCollection property="cardButtons" destination="0Wc-Iw-wBq" id="71S-Up-apM"/>
                         <outletCollection property="cardButtons" destination="x1n-ua-iFI" id="dxN-mc-m7q"/>
@@ -330,6 +274,10 @@
                         <outletCollection property="cardButtons" destination="My8-33-TXT" id="fPR-P3-Aeq"/>
                         <outletCollection property="cardButtons" destination="hRk-dJ-N22" id="NRH-uq-BBq"/>
                         <outletCollection property="cardButtons" destination="3Ew-IN-NDy" id="ORA-da-fbM"/>
+                        <outletCollection property="cardButtons" destination="J57-8o-3m9" id="ySu-av-gFV"/>
+                        <outletCollection property="cardButtons" destination="88t-wz-DU6" id="UDY-xq-w9m"/>
+                        <outletCollection property="cardButtons" destination="lvI-l8-A8M" id="KNw-53-mON"/>
+                        <outletCollection property="cardButtons" destination="ndj-ED-8JD" id="oKw-1A-fiz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -337,25 +285,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="playing-card-back.jpg" width="755" height="1057"/>
-        <image name="playing-card-back.jpg" width="755" height="1057"/>
-        <image name="playing-card-back.jpg" width="755" height="1057"/>
-        <image name="playing-card-back.jpg" width="755" height="1057"/>
-        <image name="playing-card-back.jpg" width="755" height="1057"/>
-        <image name="playing-card-back.jpg" width="755" height="1057"/>
-        <image name="playing-card-back.jpg" width="755" height="1057"/>
-        <image name="playing-card-back.jpg" width="755" height="1057"/>
-        <image name="playing-card-back.jpg" width="755" height="1057"/>
-        <image name="playing-card-back.jpg" width="755" height="1057"/>
-        <image name="playing-card-back.jpg" width="755" height="1057"/>
-        <image name="playing-card-back.jpg" width="755" height="1057"/>
-        <image name="playing-card-back.jpg" width="755" height="1057"/>
-        <image name="playing-card-back.jpg" width="755" height="1057"/>
-        <image name="playing-card-back.jpg" width="755" height="1057"/>
-        <image name="playing-card-back.jpg" width="755" height="1057"/>
-        <image name="playing-card-back.jpg" width="755" height="1057"/>
-        <image name="playing-card-back.jpg" width="755" height="1057"/>
-        <image name="playing-card-back.jpg" width="755" height="1057"/>
         <image name="playing-card-back.jpg" width="755" height="1057"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -47,4 +47,22 @@
     }
 }
 
+- (int)match:(NSArray *)otherCards {
+    int score = 0;
+    
+    for (id otherCard in otherCards) {
+        if ([otherCard isKindOfClass:[PlayingCard class]]) {
+            PlayingCard *otherPlayingCard = (PlayingCard *) otherCard;
+            if (otherPlayingCard.rank == self.rank) {
+                score += 1;
+            }
+//            if (otherPlayingCard.suit == self.suit) {
+//                score += 1;
+//            }
+        }
+    }
+    
+    return score;
+}
+
 @end

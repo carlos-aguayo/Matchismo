@@ -17,6 +17,13 @@
 
 @implementation MemoryGame
 
+- (NSMutableArray *) cards {
+    if (!_cards) {
+        _cards = [[NSMutableArray alloc] init];
+    }
+    return _cards;
+}
+
 - (id)initWithCardCount:(NSUInteger)cardCount
               usingDeck:(Deck *)deck{
     self = [super init];
@@ -30,6 +37,7 @@
     return self;
 }
 
+
 - (void)flipCardAtIndex:(NSUInteger)index{
     Card* card = [self.cards objectAtIndex:index];
     if ([card isUnplayable]) {
@@ -40,7 +48,8 @@
     card.faceUp = ![card isFaceUp];
     if ([card isFaceUp]) {
         // let's see if it matches.
-        NSArray* faceUpCards = [self getFaceUpCards];
+        NSMutableArray* faceUpCards = [self getFaceUpCards];
+        [faceUpCards removeObject:card];
         
         int score = [card match:faceUpCards];
         BOOL matchFound = score > 0;
@@ -50,7 +59,9 @@
         } else {
             // No score, so no match, let's make the faceUpCards turn down
             for (Card* otherCard in faceUpCards) {
-                otherCard.faceUp = NO;
+                if (!otherCard.isUnplayable) {
+                    otherCard.faceUp = NO;
+                }
             }
         }
         
@@ -59,15 +70,15 @@
 
 - (void) makeCardsUnPlayable:(NSArray*) cards card:(Card*) card {
     for (Card* otherCards in cards) {
-        otherCards.unplayable = NO;
+        otherCards.unplayable = YES;
     }
-    card.unplayable = NO;
+    card.unplayable = YES;
 }
 
-- (NSArray *) getFaceUpCards {
+- (NSMutableArray *) getFaceUpCards {
     NSMutableArray* up = [[NSMutableArray alloc] init];
     for (Card* card in self.cards) {
-        if ([card isFaceUp]) {
+        if ([card isFaceUp] && ![card isUnplayable]) {
             [up addObject:card];
         }
     }
