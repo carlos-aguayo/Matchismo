@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Deck.h"
 
-@interface MemoryGame : NSObject
+@interface CardMatchingGame : NSObject
 
 @property (nonatomic, readonly) int score;
 

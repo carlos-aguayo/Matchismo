@@ -7,49 +7,67 @@
 //
 
 #import "CardGameViewController.h"
-#import "PlayingCardDeck.h"
-#import "MemoryGame.h"
+#import "CardMatchingGame.h"
 
-#define NUMBER_OF_CARDS 16
-
-@interface CardGameViewController ()
-@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
+@interface CardGameViewController () <UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 
-@property (strong, nonatomic) PlayingCardDeck *deck;
-@property (strong, nonatomic) MemoryGame *memoryGame;
+@property (weak, nonatomic) IBOutlet UICollectionView *cardCollectionView;
+@property (strong, nonatomic) CardMatchingGame *game;
 @end
 
 @implementation CardGameViewController
 
-- (MemoryGame *) memoryGame {
-    if (!_memoryGame) {
-        _memoryGame = [[MemoryGame alloc] initWithCardCount:NUMBER_OF_CARDS usingDeck:self.deck];
-    }
-    return _memoryGame;
+// this is optional, it defaults to 1, providing an implementation for the sake of the example
+- (NSInteger) numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
 }
 
-- (PlayingCardDeck *) deck {
-    if (!_deck) {
-        _deck = [[PlayingCardDeck alloc] init];   
-    }
-    return _deck;
+- (NSInteger) collectionView:(UICollectionView *)collectionView
+      numberOfItemsInSection:(NSInteger)section {
+    return self.startingCardCount;
 }
 
-- (IBAction)flipCard:(UIButton *)sender {
-    [self.memoryGame flipCardAtIndex:[self.cardButtons indexOfObject:sender]];
-    [self updateUI];
+- (UICollectionViewCell *) collectionView:(UICollectionView *)collectionView
+                   cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PlayingCard" forIndexPath:indexPath];
+    Card *card = [self.game cardAtIndex:indexPath.item];
+    [self updateCell:cell usingCard:card];
+    return cell;
+    
+}
+
+- (void) updateCell:(UICollectionViewCell *)cell usingCard:(Card *) card
+{
+    // abstract
+}
+
+- (CardMatchingGame *) game {
+    if (!_game) {
+        _game = [[CardMatchingGame alloc] initWithCardCount:self.startingCardCount
+                                                  usingDeck:[self createDeck]];
+    }
+    return _game;
+}
+
+- (Deck *) createDeck { return nil; } // abstract
+- (NSUInteger) startingCardCount { return 0; }
+
+- (IBAction)flipCard:(UITapGestureRecognizer *)gesture {
+    CGPoint tapLocation = [gesture locationInView:self.cardCollectionView];
+    NSIndexPath *indexPath = [self.cardCollectionView indexPathForItemAtPoint:tapLocation];
+    if (indexPath) { // I have to check for nil in case I tap in between the cards
+        [self.game flipCardAtIndex:indexPath.item];
+        [self updateUI];
+    }
+    
 }
 
 - (void) updateUI {
-    for (UIButton *cardButton in self.cardButtons) {
-        Card *card = [self.memoryGame cardAtIndex:[self.cardButtons indexOfObject:cardButton]];
-        [cardButton setTitle:card.contents forState:UIControlStateNormal];
-        // TODO: Why do I need to do the OR in here???
-        [cardButton setTitle:card.contents forState:UIControlStateNormal|UIControlStateDisabled];
-        cardButton.selected = !card.isFaceUp;
-        cardButton.enabled = !card.isUnplayable;
-        cardButton.alpha = (card.isUnplayable) ? 0.3f : 1.0f;
+    for (UICollectionViewCell *cell in [self.cardCollectionView visibleCells]) {
+        NSIndexPath *indexPath = [self.cardCollectionView indexPathForCell:cell];
+        Card *card = [self.game cardAtIndex:indexPath.item];
+        [self updateCell:cell usingCard:card];
     }
 }
 

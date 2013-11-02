@@ -6,16 +6,16 @@
 //  Copyright (c) 2013 Dreamskiale. All rights reserved.
 //
 
-#import "MemoryGame.h"
+#import "CardMatchingGame.h"
 
-@interface MemoryGame()
+@interface CardMatchingGame()
 
 @property (strong, nonatomic) NSMutableArray *cards;
 @property (nonatomic, readwrite) int score;
 
 @end
 
-@implementation MemoryGame
+@implementation CardMatchingGame
 
 - (NSMutableArray *) cards {
     if (!_cards) {
