@@ -10,6 +10,7 @@
 
 @implementation Card
 
+/** Matches this card to the set of other cards and returns a score for the matched cards */
 - (int)match:(NSArray *)otherCards {
     int score = 0;
     

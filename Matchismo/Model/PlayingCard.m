@@ -10,6 +10,22 @@
 
 @implementation PlayingCard
 
+- (int)match:(NSArray *)otherCards {
+    int score = 0;
+    
+    for (int i = 0; i < [otherCards count]; i++) {
+        PlayingCard* other = otherCards[i];
+        if ([self.suit isEqualToString:[other suit]]) {
+            score += 1;
+        }
+        if (self.rank == other.rank) {
+            score += 4;
+        }
+    }
+    
+    return score;
+}
+
 - (NSString *) contents {
     NSArray *rankStrings = [PlayingCard rankStrings];
     return [rankStrings[self.rank] stringByAppendingString:self.suit];
